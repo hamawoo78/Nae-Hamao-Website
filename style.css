@@ -1,0 +1,300 @@
+html {
+    height: 100%;
+    width: 100%;
+    background-color:#FFF9F3;
+    font-family: 'Bodoni Moda', serif;
+    scroll-behavior: smooth;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+  /* header */
+  
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
+.navbar a {
+  display: block;
+  color: #0A2A2C;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+
+
+
+
+#name{
+  font-size: 30px;
+}
+
+#items{
+  display: flex;
+  justify-content: flex-end;
+  font-size:20px;
+}
+
+.top_picture{
+  display:flex;
+  justify-content:center;
+}
+
+@media (min-width: 961px){
+  .top_picture img{
+    max-width: 1130px;
+    height:auto;
+  }
+}
+
+@media (max-width: 960px){
+  .top_picture img {
+      max-width: 100%;
+      height: auto;
+  }
+}
+
+
+/* position */
+#work, #resume, #footer{
+  padding: 20px 0 20px 50px;
+}
+
+#work h2, #resume h2{
+  font-size: 45px;
+  margin:0 0 0 10px;
+}
+
+
+#work ul, #resume ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 10px;
+  overflow: hidden;
+}
+
+/* work */
+#work{
+  background:#174441;
+  color:#f5b8a8;
+  /* padding: 0 0 0 5px; */
+}
+
+#work li{
+  padding: 20px 0 20px 16px;
+}
+
+#work ul{
+  font-size: 20px;
+}
+
+#work a{
+  color:#f9eeeb;
+  transition: text-shadow .3s;
+}
+
+#work a:hover{
+  color:#bc664e;
+  text-shadow: 0 0 11px rgba(57, 50, 50, 0.5); 
+}
+
+#work p{
+  font-size: 20px;
+}
+
+/* popup */
+.popup {
+  display:block;
+  text-decoration:none;
+}
+
+.popup + .popover-img img {
+  display:none;
+}
+
+.popup:hover + .popover-img img {
+  display:block;
+  position:absolute;
+  top:600px;
+  right: 5%;
+   /* Adjust this value based on your layout */
+  /* Additional styling for the image container */
+  border: 0.2px solid #ccc;
+  background-color: #fff;
+  padding: 10px;
+  z-index: 1;
+}
+
+.popover-img img{
+  width:550px;
+}
+
+
+#canvas_game{
+  width: 40%;
+}
+
+
+
+/* Resume */
+#resume{
+  background:#FCD8CF;
+  color:#174441;
+  display: flex;
+  justify-content:space-between;
+
+}
+
+#star_title, #line_detail{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#star_title img{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#line{
+  border-left: 2px solid #174441;
+  height: 221px;
+  margin: 0 0 0 11px
+}
+
+#line2{
+  border-left: 2px solid #174441;
+  height: 90px;
+  margin: 0 0 0 11px
+}
+
+
+#title{
+  list-style-type: none;
+  font-weight: bold;
+  padding: 5px 25px;
+}
+
+#resume_PDF{
+  font-size:13px;
+  color:#174441;
+}
+
+#resume h3{
+  margin:10px 0 10px 10px;
+  font-size: 20px;
+}
+
+#resume li{
+  padding: 5px 16px;
+}
+
+#space{
+  list-style-type: none;
+}
+
+.skills{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+#skill_icon{
+  display:flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#skill_icon_block{
+  width:10%;
+  padding:37px;
+  text-align: center;
+}
+
+#skill_icon_block img{
+  height: 50px;
+}
+
+
+/* footer */
+#logo{
+  width:150px;
+  padding:10px 0 10px 30px;
+}
+
+#footer{
+  display: flex;
+  justify-content:space-start ;
+}
+
+#logo_box{
+  display: flex;
+  justify-content: flex-start;
+}
+
+#footer_menu_box{
+  display:flex;
+  justify-content:flex-start;
+}
+
+#footer_menu{
+  margin: 10px 0 0 150%;
+  list-style-type: none;
+} 
+
+#footer_menu a{
+  padding: 0 0 5px 0;
+  color:#174441;
+}
+
+.bottom{
+  background-color:#C58A4A;
+  color:#f9eeeb;
+  text-align: center;
+  padding:0.1px 0 10px 0;
+}
+
+.bottom p{
+  margin:6px 0;
+}
+
+#social a{
+  color:#f9eeeb;
+}
+
+
+@media (max-width: 526px){
+  .navbar ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+}
+
+@media (min-width: 305px) and (max-width: 1070px) {
+
+  #resume{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+  }
+
+  #skill_icon_block{
+    width: 11%;
+    padding: 39px 55px 0 39px;
+  }
+}
+  
