@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Projects - Nae Hamao</title>
+    
+    <!-- Base CSS -->
+    <link rel="stylesheet" type="text/css" href="base.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Page-specific CSS -->
+    <style>
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, #174441 0%, #0A2A2C 100%);
+            color: #f9eeeb;
+            padding: 80px 20px 60px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: clamp(36px, 6vw, 56px);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .page-header p {
+            font-size: clamp(16px, 3vw, 20px);
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Projects Section */
+        #work {
+            padding: 60px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        #work h2 {
+            font-size: clamp(32px, 6vw, 45px);
+            color: #174441;
+            margin: 0 0 40px 0;
+            text-align: center;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px 0;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(23, 68, 65, 0.15);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            background: #f5f5f5;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.05);
+        }
+
+        .project-content {
+            padding: 25px;
+        }
+
+        .project-title {
+            font-size: clamp(18px, 3vw, 22px);
+            margin-bottom: 12px;
+        }
+
+        .project-title a {
+            color: #174441;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .project-title a:hover {
+            color: #bc664e;
+        }
+
+        .project-link {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #5a8886;
+            padding-left: 5px;
+            transition: color 0.3s ease;
+        }
+
+        .project-link:hover {
+            color: #bc664e;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .page-header {
+                padding: 60px 20px 40px;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+                padding: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            #work {
+                padding: 40px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <nav class="navbar">
+            <ul>
+                <div id="name">
+                    <li><a href="index.html">Nae Hamao</a></li>
+                </div>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div id="items">
+                    <li><a href="index.html#work">Works</a></li>
+                    <li><a href="school_projects.html">School Projects</a></li>
+                    <li><a href="index.html#resume">Resume</a></li>
+                    <li><a href="index.html#footer">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="page-header">
+            <h1>School Projects</h1>
+            <p>A collection of projects I developed during my time at Bellevue College, showcasing my growth in software development</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section id="work">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/Zodiac.PNG" alt="Zodiac App">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">
+                            <a href="https://github.com/hamawoo78/Zodiac-Sign-Personality-Checker">Zodiac Sign Personality Check App (JSON server)</a>
+                        </div>
+                        <a href="HamaoN-Zodiac Sign Personality Check App.pptx" class="project-link">→ PPT presentation</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x200/174441/f9eeeb?text=Weather+App" alt="Weather App">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">
+                            <a href="https://www.youtube.com/watch?v=BHOTFd9d58s">Weather App for Cafe (Django)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/canvas_game.png" alt="Canvas Game">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">
+                            <a href="https://hamawoo78.github.io/GetTheStarwithMario_Canvas_Game/">Canvas Game (Javascript)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/RPS.png" alt="Rock Paper Scissors Game">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">
+                            <a href="https://hamawoo78.github.io/RockPaperScissorsGame/">Rock Paper Scissors Game (Javascript)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/EcommersWeb.PNG" alt="E-commerce Website">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">
+                            <a href="https://www.youtube.com/watch?v=cAsBxHKiW9k">E-commerce Website (Flask)</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x200/174441/f9eeeb?text=Portfolio+Website" alt="Portfolio Website">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">
+                            <a href="#">This Web Site!! (HTML/CSS)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div id="logo_box"></div>
+        <nav id="footer_menu_box">
+            <ul id="footer_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#work">Works</a></li>
+                <li><a href="school_projects.html">School Projects</a></li>
+                <li><a href="index.html#resume">Resume</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <div class="bottom">
+        <p>Made by Nae Hamao</p>
+        <div id="social">
+            <a href="https://www.linkedin.com/in/nae-hamao/" aria-label="LinkedIn">
+                <i class="fa">&#xf0e1;</i>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const menuItems = document.getElementById('items');
+            
+            menuToggle.classList.toggle('active');
+            menuItems.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#items a').forEach(link => {
+            link.addEventListener('click', () => {
+                const menuToggle = document.querySelector('.mobile-menu-toggle');
+                const menuItems = document.getElementById('items');
+                
+                menuToggle.classList.remove('active');
+                menuItems.classList.remove('active');
+            });
+        });

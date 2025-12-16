@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Nae Hamao{% endblock %}</title>
+    
+    <!-- Base CSS -->
+    <link rel="stylesheet" type="text/css" href="base.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Page-specific CSS -->
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <nav class="navbar">
+            <ul>
+                <div id="name">
+                    <li><a href="index.html">Nae Hamao</a></li>
+                </div>
+                <div id="items">
+                    <li><a href="index.html#work">Works</a></li>
+                    <li><a href="school_projects.html">School Projects</a></li>
+                    <li><a href="index.html#resume">Resume</a></li>
+                    <li><a href="index.html#footer">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+        {% block header_content %}{% endblock %}
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}
+        <!-- Page-specific content goes here -->
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div id="logo_box"></div>
+        <nav id="footer_menu_box">
+            <ul id="footer_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#work">Works</a></li>
+                <li><a href="school_projects.html">School Projects</a></li>
+                <li><a href="index.html#resume">Resume</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <div class="bottom">
+        <p>Made by Nae Hamao</p>
+        <div id="social">
+            <a href="https://www.linkedin.com/in/nae-hamao/" aria-label="LinkedIn">
+                <i class="fa">&#xf0e1;</i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Page-specific JavaScript -->
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

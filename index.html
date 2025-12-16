@@ -1,165 +1,287 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nae Hamao - Portfolio</title>
+    
+    <!-- Base CSS -->
+    <link rel="stylesheet" type="text/css" href="base.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!-- <script src="main.js" type="text/javascript"></script> -->
-    <title>Nae Hamao</title>
 </head>
 <body>
+    <!-- Header -->
     <div class="header">
         <nav class="navbar">
             <ul>
                 <div id="name">
-                    <li><a href="#">Nae Hamao</a></li>
+                    <li><a href="index.html">Nae Hamao</a></li>
                 </div>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <div id="items">
                     <li><a href="#work">Works</a></li>
+                    <li><a href="school_projects.html">School Projects</a></li>
                     <li><a href="#resume">Resume</a></li>
                     <li><a href="#footer">Contact</a></li>
                 </div>
             </ul>
         </nav>
 
-        <div class="top_picture">
-            <img src="images/main page.jpg" alt="Portfolio Header Image">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Nae Hamao</h1>
+                <h2 class="hero-subtitle">Portfolio</h2>
+                <p class="description">
+                    Software Developer specializing in Python-based automation, API integration, and full-stack web development. 
+                    With experience streamlining workflows, managing SQL databases on Azure, and creating engaging 
+                    user interfaces, I bring both technical expertise and cross-cultural communication skills from 
+                    my work in Japan and the U.S.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#work" class="cta-button cta-primary">View Projects</a>
+                    <a href="#footer" class="cta-button cta-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="circle-pink"></div>
+                <div class="circle-teal"></div>
+                <div class="dots-circle">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/nae_image.png" alt="Nae Hamao">
+                </div>
+            </div>
         </div>
     </div>
-    
-    <section id="work">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <a href="https://github.com/hamawoo78/Zodiac-Sign-Personality-Checker" class="popup">Zodiac Sign Personality Check App (JSON server)</a>
-                <div class="popover-img">
-                    <img src="images/Zodiac.PNG" alt="Zodiac App Screenshot">
-                </div>
-                <div style="margin-top: 5px; margin-left: 20px;">
-                    <a href="HamaoN-Zodiac Sign Personality Check App.pptx" style="font-size: 14px;">→ PPT presentation about Zodiac Sign Personality App</a>
-                </div>
-            </li>
-            <li>
-                <a href="https://hamawoo78.github.io/GetTheStarwithMario_Canvas_Game/" class="popup">Canvas Game (Javascript)</a>
-                <div class="popover-img">
-                    <img src="images/canvas_game.png" alt="Canvas Game Screenshot">
-                </div>
-            </li>
-            <li>
-                <a href="https://hamawoo78.github.io/RockPaperScissorsGame/" class="popup">Rock Paper Scissors Game (Javascript)</a>
-                <div class="popover-img">
-                    <img src="images/RPS.png" alt="Rock Paper Scissors Game Screenshot">
-                </div>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/watch?v=cAsBxHKiW9k" class="popup">E-commerce Website (Flask)</a>
-                <div class="popover-img">
-                    <img src="images/EcommersWeb.PNG" alt="E-commerce Website Screenshot">
-                </div>
-            </li>
-            <li><a href="#">This Web Site!! (HTML/CSS)</a></li>
-        </ul>
-    </section>
 
-    <section id="resume">
-        <div class="resume-container">
-            <div class="experience">
-                <h2>My Experience <a id="resume_PDF" href="Nae Hamao Software Developer Resume.pdf">PDF for detail</a></h2>
-                
-                <div id="star_title">
-                    <img src="images/star.png" alt="Star icon">
-                    <h3>Education</h3>
-                </div>
-
-                <div id="line_detail">
-                    <div id="line"></div>
-                    <div id="detail">
-                        <p id="title">Bellevue College, Bellevue, WA</p>
-                        <ul>
-                            <li>Software Development, AAS-T</li>
-                            <li>Fall 2022 - Present</li>
-                        </ul>
-                        <div id="space"></div>
-                        <p id="title">Tokyo University of Agriculture, Tokyo, Japan</p>
-                        <ul>
-                            <li>Bachelor of Bio-Science in Fermentation Science</li>
-                            <li>Apr 2013 – Mar 2017</li>
-                        </ul>
+    <!-- Main Content -->
+    <main>
+        <section id="work">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x200/174441/f9eeeb?text=School+Projects" alt="School Projects">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">
+                            <a href="school-projects.html">School Projects</a>
+                        </div>
+                        <p style="color: #0A2A2C; margin-top: 10px; font-size: 15px;">
+                            Projects developed during my Software Development program at Bellevue College
+                        </p>
                     </div>
                 </div>
 
-                <div id="star_title">
-                    <img src="images/star.png" alt="Star icon">
-                    <h3>Professional Experience</h3>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x200/FCD8CF/174441?text=10+Day+Challenge" alt="10 Project Challenge">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title">
+                            <a href="december-challenge.html">10 Project Challenge in December 2025</a>
+                        </div>
+                        <p style="color: #0A2A2C; margin-top: 10px; font-size: 15px;">
+                            A personal challenge to build 10 projects in December to sharpen my skills
+                        </p>
+                    </div>
                 </div>
 
-                <div id="line_detail">
-                    <div id="line2"></div>
-                    <div id="detail">
-                        <p id="title">Event Organizer</p>
-                        <ul>
-                            <li>Shibataya Liquor Store Co., Ltd., Nakano, Tokyo, Japan</li>
-                            <li>April 2017 – July 2019</li>
-                        </ul>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x200/5a8886/f9eeeb?text=Other+Projects" alt="Other Projects">
                     </div>
-                </div>
-                
-                <div id="star_title">
-                    <img src="images/star.png" alt="Star icon">
-                </div>
-            </div>
-
-            <div class="skills">
-                <h2>Skills</h2>
-                <div id="skill_icon">
-                    <div id="skill_icon_block">
-                        <img src="images/python-logo.png" alt="Python">
-                        <p>Python</p>
-                    </div>
-                    <div id="skill_icon_block">
-                        <img src="images/cdnlogo.com_c-sharp.png" alt="C#">
-                        <p>C#</p>
-                    </div>
-                    <div id="skill_icon_block">
-                        <img src="images/HTML5_Logo_512.png" alt="HTML5">
-                        <p>HTML</p>
-                    </div>
-                    <div id="skill_icon_block">
-                        <img src="images/CSS-Logo.png" alt="CSS3">
-                        <p>CSS</p>
-                    </div>
-                    <div id="skill_icon_block">
-                        <img src="images/java-logo.avif" alt="Java">
-                        <p>Java</p>
-                    </div>
-                    <div id="skill_icon_block">
-                        <img src="images/sql-server-dba-microsoft-sql-server-database.png" alt="SQL">
-                        <p>SQL</p>
-                    </div>
-                    <div id="skill_icon_block">
-                        <img src="images/django-logo-negative.png" alt="Django">
-                        <p>Django</p>
-                    </div>
-                    <div id="skill_icon_block">
-                        <img src="images/flask-seeklogo.svg" alt="Flask">
-                        <p>Flask</p>
+                    <div class="project-content">
+                        <div class="project-title">
+                            <a href="other-projects.html">Other Projects</a>
+                        </div>
+                        <p style="color: #0A2A2C; margin-top: 10px; font-size: 15px;">
+                            Personal projects and experimental work outside of school
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <section id="resume">
+            <div class="resume-container">
+                <div class="experience">
+                    <h2>My Experience <a id="resume_PDF" href="Nae Hamao Software Developer Resume.pdf">PDF Download</a></h2>
+
+                    <div id="star_title">
+                        <img src="images/star.png" alt="Star icon">
+                        <h3>Professional Experience</h3>
+                    </div>
+
+                    <div id="line_detail">
+                        <div id="line2"></div>
+                        <div id="detail">
+                            <p id="title">Internal Software Developer</p>
+                            <ul>
+                                <li>Dental Professionals, Bellevue, WA</li>
+                                <li>Apr 2024 – Aug 2025</li>
+                            </ul>
+                            <div id="space"></div>
+                            <p id="title">Event Organizer</p>
+                            <ul>
+                                <li>Shibataya Liquor Store Co., Ltd., Nakano, Tokyo, Japan</li>
+                                <li>Apr 2017 – Jul 2019</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div id="star_title">
+                        <img src="images/star.png" alt="Star icon">
+                        <h3>Education</h3>
+                    </div>
+
+                    <div id="line_detail">
+                        <div id="line"></div>
+                        <div id="detail">
+                            <p id="title">Bellevue College, Bellevue, WA</p>
+                            <ul>
+                                <li>Software Development, AAS-T</li>
+                                <li>Sep 2022 - Jun 2024</li>
+                            </ul>
+                            <div id="space"></div>
+                            <p id="title">Tokyo University of Agriculture, Tokyo, Japan</p>
+                            <ul>
+                                <li>Bachelor of Bio-Science in Fermentation Science</li>
+                                <li>Apr 2013 – Mar 2017</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div id="star_title">
+                        <img src="images/star.png" alt="Star icon">
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <div id="skill_icon">
+                        <div id="skill_icon_block">
+                            <img src="images/python-logo.png" alt="Python">
+                            <p>Python</p>
+                        </div>
+                        <div id="skill_icon_block">
+                            <img src="images/cdnlogo.com_c-sharp.png" alt="C#">
+                            <p>C#</p>
+                        </div>
+                        <div id="skill_icon_block">
+                            <img src="images/HTML5_Logo_512.png" alt="HTML5">
+                            <p>HTML</p>
+                        </div>
+                        <div id="skill_icon_block">
+                            <img src="images/CSS-Logo.png" alt="CSS3">
+                            <p>CSS</p>
+                        </div>
+                        <div id="skill_icon_block">
+                            <img src="images/java-logo.avif" alt="Java">
+                            <p>Java</p>
+                        </div>
+                        <div id="skill_icon_block">
+                            <img src="images/sql-server-dba-microsoft-sql-server-database.png" alt="SQL">
+                            <p>SQL</p>
+                        </div>
+                        <div id="skill_icon_block">
+                            <img src="images/django-logo-negative.png" alt="Django">
+                            <p>Django</p>
+                        </div>
+                        <div id="skill_icon_block">
+                            <img src="images/flask-seeklogo.svg" alt="Flask">
+                            <p>Flask</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer id="footer">
         <div id="logo_box"></div>
         <nav id="footer_menu_box">
             <ul id="footer_menu">
                 <li><a href="#">Top</a></li>
                 <li><a href="#work">Works</a></li>
+                <li><a href="school_projects.html">School Projects</a></li>
                 <li><a href="#resume">Resume</a></li>
             </ul>
         </nav>
@@ -173,5 +295,26 @@
             </a>
         </div>
     </div>
+
+    <script>
+        function toggleMobileMenu() {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const menuItems = document.getElementById('items');
+            
+            menuToggle.classList.toggle('active');
+            menuItems.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#items a').forEach(link => {
+            link.addEventListener('click', () => {
+                const menuToggle = document.querySelector('.mobile-menu-toggle');
+                const menuItems = document.getElementById('items');
+                
+                menuToggle.classList.remove('active');
+                menuItems.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
