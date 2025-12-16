@@ -13,8 +13,8 @@
     <title>Nae Hamao</title>
 </head>
 <body>
-    <div class = "header">
-        <div class = "navbar">
+    <div class="header">
+        <nav class="navbar">
             <ul>
                 <div id="name">
                     <li><a href="#">Nae Hamao</a></li>
@@ -25,154 +25,153 @@
                     <li><a href="#footer">Contact</a></li>
                 </div>
             </ul>
-        </div>
+        </nav>
 
-        <div class = "top_picture">
-            <img src= "images/main page.jpg" alt ="">
+        <div class="top_picture">
+            <img src="images/main page.jpg" alt="Portfolio Header Image">
         </div>
     </div>
     
-    <div id = "work">
+    <section id="work">
         <h2>Projects</h2>
         <ul>
-            <li><a href="https://github.com/hamawoo78/Zodiac-Sign-Personality-Checker" class = "popup">Zodiac Sign Personality Check App(JSON server)</a>
+            <li>
+                <a href="https://github.com/hamawoo78/Zodiac-Sign-Personality-Checker" class="popup">Zodiac Sign Personality Check App (JSON server)</a>
                 <div class="popover-img">
-                    <img src="images/Zodiac.PNG" alt="" style="width: 215px; height: auto;">
+                    <img src="images/Zodiac.PNG" alt="Zodiac App Screenshot">
+                </div>
+                <div style="margin-top: 5px; margin-left: 20px;">
+                    <a href="HamaoN-Zodiac Sign Personality Check App.pptx" style="font-size: 14px;">→ PPT presentation about Zodiac Sign Personality App</a>
                 </div>
             </li>
-            <li><a href="HamaoN-Zodiac Sign Personality Check App.pptx" style="font-size: 10px;">PPT presentation about Zodiac Sign Personality App</a></li>
-            <li><a href="https://www.youtube.com/watch?v=BHOTFd9d58s" class = "popup">Weather App for Cafe(Django)</a>
-                <!-- <p>**Fixing</p> -->
+            <li>
+                <a href="https://hamawoo78.github.io/GetTheStarwithMario_Canvas_Game/" class="popup">Canvas Game (Javascript)</a>
                 <div class="popover-img">
-                    <!-- <img src= "images/Mario.png" alt =""> -->
+                    <img src="images/canvas_game.png" alt="Canvas Game Screenshot">
                 </div>
             </li>
-            <li><a href="https://hamawoo78.github.io/GetTheStarwithMario_Canvas_Game/" class = "popup">Canvas Game(Javascript)</a>
+            <li>
+                <a href="https://hamawoo78.github.io/RockPaperScissorsGame/" class="popup">Rock Paper Scissors Game (Javascript)</a>
                 <div class="popover-img">
-                    <img id = "canvas_game" src= "images/canvas_game.png" alt ="">
+                    <img src="images/RPS.png" alt="Rock Paper Scissors Game Screenshot">
                 </div>
             </li>
-            <li><a href="https://hamawoo78.github.io/RockPaperScissorsGame/" class = "popup">Rock Paper Scissers Game(Javascript)</a>
+            <li>
+                <a href="https://www.youtube.com/watch?v=cAsBxHKiW9k" class="popup">E-commerce Website (Flask)</a>
                 <div class="popover-img">
-                    <a href="https://hamawoo78.github.io/RockPaperScissorsGame/"><img src= "images/RPS.png" alt =""></a>
+                    <img src="images/EcommersWeb.PNG" alt="E-commerce Website Screenshot">
                 </div>
             </li>
-            <li><a href="https://www.youtube.com/watch?v=cAsBxHKiW9k" class = "popup">E-commers Website(Falsk)</a>
-                <div class="popover-img">
-                    <img src= "images/EcommersWeb.PNG" alt ="">
-                </div>
-            </li>
-            <li><a href="">This Web Site!! (HTML/CSS)</a></li>
+            <li><a href="#">This Web Site!! (HTML/CSS)</a></li>
         </ul>
-    </div>
+    </section>
 
-    <div id = "resume">
-        <div class = "experience">
-            <h2>My Experience <a id = "resume_PDF" href="Nae Hamao Software Developer Resume.pdf">PDF for detail</a></h2>
-            
-            <div id = "star_title">
-                <img src= "images/star.png" alt ="">
-                <h3>Education</h3>
-            </div>
+    <section id="resume">
+        <div class="resume-container">
+            <div class="experience">
+                <h2>My Experience <a id="resume_PDF" href="Nae Hamao Software Developer Resume.pdf">PDF for detail</a></h2>
+                
+                <div id="star_title">
+                    <img src="images/star.png" alt="Star icon">
+                    <h3>Education</h3>
+                </div>
 
-            <div id = "line_detail">
-                <div id = "line"></div>
-                <div id = "detail">
-                    <li id = "title">Bellevue College, Bellevue, WA</li>
-                    <ul>
-                        <li>Software Development, AAS-T</li>
-                        <li>Fall 2022 - Present</li>
-                    </ul>
-                    <li id = "space"></li>
-                    <li id = "title">Tokyo University of Agriculture, Tokyo, Japan</li>
-                    <ul>
-                        <li>Bachelor of Bio-Science in Fermentation Science</li>
-                        <li>Apr 2013 – Mar 2017</li>
-                    </ul>
+                <div id="line_detail">
+                    <div id="line"></div>
+                    <div id="detail">
+                        <p id="title">Bellevue College, Bellevue, WA</p>
+                        <ul>
+                            <li>Software Development, AAS-T</li>
+                            <li>Fall 2022 - Present</li>
+                        </ul>
+                        <div id="space"></div>
+                        <p id="title">Tokyo University of Agriculture, Tokyo, Japan</p>
+                        <ul>
+                            <li>Bachelor of Bio-Science in Fermentation Science</li>
+                            <li>Apr 2013 – Mar 2017</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="star_title">
+                    <img src="images/star.png" alt="Star icon">
+                    <h3>Professional Experience</h3>
+                </div>
+
+                <div id="line_detail">
+                    <div id="line2"></div>
+                    <div id="detail">
+                        <p id="title">Event Organizer</p>
+                        <ul>
+                            <li>Shibataya Liquor Store Co., Ltd., Nakano, Tokyo, Japan</li>
+                            <li>April 2017 – July 2019</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id="star_title">
+                    <img src="images/star.png" alt="Star icon">
                 </div>
             </div>
 
-            <div id = "star_title">
-                <img src= "images/star.png" alt ="">
-                <h3>PROFESSIONAL EXPERIENCE</h3>
-            </div>
-
-            <div id = "line_detail">
-                <div id = "line2"></div>
-                <div id = "detail">
-                    <li id = "title">Event Organizer</li>
-                    <ul>
-                        <li>Shibataya Liquor Store Co., Ltd., Nakano, Tokyo, Japan</li>
-                        <li>April 2017 –July 2019</li>
-                    </ul>
+            <div class="skills">
+                <h2>Skills</h2>
+                <div id="skill_icon">
+                    <div id="skill_icon_block">
+                        <img src="images/python-logo.png" alt="Python">
+                        <p>Python</p>
+                    </div>
+                    <div id="skill_icon_block">
+                        <img src="images/cdnlogo.com_c-sharp.png" alt="C#">
+                        <p>C#</p>
+                    </div>
+                    <div id="skill_icon_block">
+                        <img src="images/HTML5_Logo_512.png" alt="HTML5">
+                        <p>HTML</p>
+                    </div>
+                    <div id="skill_icon_block">
+                        <img src="images/CSS-Logo.png" alt="CSS3">
+                        <p>CSS</p>
+                    </div>
+                    <div id="skill_icon_block">
+                        <img src="images/java-logo.avif" alt="Java">
+                        <p>Java</p>
+                    </div>
+                    <div id="skill_icon_block">
+                        <img src="images/sql-server-dba-microsoft-sql-server-database.png" alt="SQL">
+                        <p>SQL</p>
+                    </div>
+                    <div id="skill_icon_block">
+                        <img src="images/django-logo-negative.png" alt="Django">
+                        <p>Django</p>
+                    </div>
+                    <div id="skill_icon_block">
+                        <img src="images/flask-seeklogo.svg" alt="Flask">
+                        <p>Flask</p>
+                    </div>
                 </div>
-            </div>
-            <div id = "star_title">
-                <img src= "images/star.png" alt ="">
             </div>
         </div>
+    </section>
 
-        <div class = "skills">
-            <h2>Skills</h2>
-            <div id = "skill_icon">
-                <div id="skill_icon_block">
-                    <img src= "images/python-logo.png" alt ="python">
-                    <p>python</p>
-                </div>
-                <div id="skill_icon_block">
-                    <img src= "images/cdnlogo.com_c-sharp.png" alt ="c-sharp">
-                    <p>C#</p>
-                </div>
-                <div id="skill_icon_block">
-                    <img src= "images/HTML5_Logo_512.png" alt ="HTML">
-                    <p>HTML</p>
-                </div>
-                <div id="skill_icon_block">
-                    <img src= "images/CSS-Logo.png" alt ="CSS">
-                    <p>CSS</p>
-                </div>
-                <div id="skill_icon_block">
-                    <img src= "images/java-logo.avif" alt ="">
-                    <p>java</p>
-                </div>
-                <div id="skill_icon_block">
-                    <img src= "images/sql-server-dba-microsoft-sql-server-database.png" alt = "SQL">
-                    <p>SQL</p>
-                </div>
-                <div id="skill_icon_block">
-                    <img src= "images/django-logo-negative.png" alt="django">
-                    <p>django</p>
-                </div>
-                <div id="skill_icon_block">
-                    <img src= "images/flask-seeklogo.svg" alt="flask">
-                    <p>flask</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div id = "footer">
-        <div id = "logo_box">
-            <!-- <img id = "logo" src = "images/Mario.png" alt="">s -->
-        </div>
-        <div id = "footer_menu_box">
-            <ul id = "footer_menu">
+    <footer id="footer">
+        <div id="logo_box"></div>
+        <nav id="footer_menu_box">
+            <ul id="footer_menu">
                 <li><a href="#">Top</a></li>
                 <li><a href="#work">Works</a></li>
                 <li><a href="#resume">Resume</a></li>
             </ul>
-        </div>
-    </div>
+        </nav>
+    </footer>
 
-    <div class = "bottom">
+    <div class="bottom">
         <p>Made by Nae Hamao</p>
-        <div id = "social">
-<!--             <i style="font-size:24px" class="fa"><a href="https://www.instagram.com/__i_am_nae__/">&#xf16d;</a></i> -->
-            <i style="font-size:24px" class="fa"><a href="https://www.linkedin.com/in/nae-hamao/">&#xf0e1;</a></i>
+        <div id="social">
+            <a href="https://www.linkedin.com/in/nae-hamao/" aria-label="LinkedIn">
+                <i class="fa">&#xf0e1;</i>
+            </a>
         </div>
     </div>
-
-
 </body>
 </html>

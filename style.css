@@ -1,300 +1,339 @@
-html {
-    height: 100%;
-    width: 100%;
-    background-color:#FFF9F3;
-    font-family: 'Bodoni Moda', serif;
-    scroll-behavior: smooth;
-}
 
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
 
-a{
-  text-decoration: none;
-}
+      html {
+          scroll-behavior: smooth;
+      }
 
-  /* header */
-  
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
+      body {
+          background-color: #FFF9F3;
+          font-family: 'Bodoni Moda', serif;
+          line-height: 1.6;
+      }
 
+      a {
+          text-decoration: none;
+      }
 
-.navbar a {
-  display: block;
-  color: #0A2A2C;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  float: left;
-}
+      /* Header & Navigation */
+      .header {
+          background-color: #FFF9F3;
+      }
 
+      .navbar {
+          padding: 0 20px;
+      }
 
+      .navbar ul {
+          list-style-type: none;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          padding: 10px 0;
+      }
 
+      .navbar a {
+          display: block;
+          color: #0A2A2C;
+          padding: 14px 16px;
+          transition: color 0.3s ease;
+      }
 
-#name{
-  font-size: 30px;
-}
+      .navbar a:hover {
+          color: #bc664e;
+      }
 
-#items{
-  display: flex;
-  justify-content: flex-end;
-  font-size:20px;
-}
+      #name {
+          font-size: clamp(24px, 5vw, 30px);
+          font-weight: 700;
+      }
 
-.top_picture{
-  display:flex;
-  justify-content:center;
-}
+      #items {
+          display: flex;
+          gap: 10px;
+          font-size: clamp(16px, 3vw, 20px);
+      }
 
-@media (min-width: 961px){
-  .top_picture img{
-    max-width: 1130px;
-    height:auto;
-  }
-}
+      .top_picture {
+          display: flex;
+          justify-content: center;
+          padding: 20px;
+      }
 
-@media (max-width: 960px){
-  .top_picture img {
-      max-width: 100%;
-      height: auto;
-  }
-}
+      .top_picture img {
+          max-width: 100%;
+          height: auto;
+          max-width: 1130px;
+      }
 
+      /* Section Styling */
+      section {
+          padding: 60px 20px;
+      }
 
-/* position */
-#work, #resume, #footer{
-  padding: 20px 0 20px 50px;
-}
+      section h2 {
+          font-size: clamp(32px, 6vw, 45px);
+          margin: 0 0 30px 10px;
+      }
 
-#work h2, #resume h2{
-  font-size: 45px;
-  margin:0 0 0 10px;
-}
+      /* Work Section */
+      #work {
+          background: #174441;
+          color: #f5b8a8;
+      }
 
+      #work ul {
+          list-style-type: none;
+          padding: 0 10px;
+      }
 
-#work ul, #resume ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0 0 0 10px;
-  overflow: hidden;
-}
+      #work li {
+          padding: 15px 0;
+          font-size: clamp(16px, 3vw, 20px);
+      }
 
-/* work */
-#work{
-  background:#174441;
-  color:#f5b8a8;
-  /* padding: 0 0 0 5px; */
-}
+      #work a {
+          color: #f9eeeb;
+          transition: all 0.3s ease;
+          display: inline-block;
+      }
 
-#work li{
-  padding: 20px 0 20px 16px;
-}
+      #work a:hover {
+          color: #bc664e;
+          text-shadow: 0 0 11px rgba(57, 50, 50, 0.5);
+      }
 
-#work ul{
-  font-size: 20px;
-}
+      /* Popup Images */
+      .popup {
+          position: relative;
+      }
 
-#work a{
-  color:#f9eeeb;
-  transition: text-shadow .3s;
-}
+      .popover-img {
+          display: none;
+      }
 
-#work a:hover{
-  color:#bc664e;
-  text-shadow: 0 0 11px rgba(57, 50, 50, 0.5); 
-}
+      @media (min-width: 769px) {
+          .popup:hover + .popover-img {
+              display: block;
+              position: fixed;
+              top: 50%;
+              right: 5%;
+              transform: translateY(-50%);
+              border: 2px solid #ccc;
+              background-color: #fff;
+              padding: 10px;
+              z-index: 1000;
+              max-width: 400px;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          }
 
-#work p{
-  font-size: 20px;
-}
+          .popover-img img {
+              width: 100%;
+              height: auto;
+          }
+      }
 
-/* popup */
-.popup {
-  display:block;
-  text-decoration:none;
-}
+      /* Resume Section */
+      #resume {
+          background: #FCD8CF;
+          color: #174441;
+      }
 
-.popup + .popover-img img {
-  display:none;
-}
+      .resume-container {
+          display: flex;
+          gap: 40px;
+          flex-wrap: wrap;
+      }
 
-.popup:hover + .popover-img img {
-  display:block;
-  position:absolute;
-  top:600px;
-  right: 5%;
-   /* Adjust this value based on your layout */
-  /* Additional styling for the image container */
-  border: 0.2px solid #ccc;
-  background-color: #fff;
-  padding: 10px;
-  z-index: 1;
-}
+      .experience {
+          flex: 1;
+          min-width: 300px;
+      }
 
-.popover-img img{
-  width:550px;
-}
+      .skills {
+          flex: 1;
+          min-width: 300px;
+      }
 
+      #star_title {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin: 20px 0 10px 0;
+      }
 
-#canvas_game{
-  width: 40%;
-}
+      #star_title img {
+          width: 1.5rem;
+          height: 1.5rem;
+      }
 
+      #star_title h3 {
+          font-size: clamp(18px, 3vw, 20px);
+          margin: 0;
+      }
 
+      #resume_PDF {
+          font-size: 13px;
+          color: #174441;
+          margin-left: 15px;
+          text-decoration: underline;
+      }
 
-/* Resume */
-#resume{
-  background:#FCD8CF;
-  color:#174441;
-  display: flex;
-  justify-content:space-between;
+      #line_detail {
+          display: flex;
+          gap: 20px;
+          margin-left: 11px;
+      }
 
-}
+      #line, #line2 {
+          border-left: 2px solid #174441;
+          flex-shrink: 0;
+      }
 
-#star_title, #line_detail{
-  display:flex;
-  justify-content: flex-start;
-  align-items: center;
-}
+      #line {
+          min-height: 220px;
+      }
 
-#star_title img{
-  width: 1.5rem;
-  height: 1.5rem;
-}
+      #line2 {
+          min-height: 90px;
+      }
 
-#line{
-  border-left: 2px solid #174441;
-  height: 221px;
-  margin: 0 0 0 11px
-}
+      #detail {
+          flex: 1;
+      }
 
-#line2{
-  border-left: 2px solid #174441;
-  height: 90px;
-  margin: 0 0 0 11px
-}
+      #detail ul {
+          list-style-type: disc;
+          margin-left: 20px;
+      }
 
+      #detail li {
+          padding: 5px 0;
+      }
 
-#title{
-  list-style-type: none;
-  font-weight: bold;
-  padding: 5px 25px;
-}
+      #title {
+          font-weight: bold;
+          list-style-type: none;
+          margin: 10px 0;
+      }
 
-#resume_PDF{
-  font-size:13px;
-  color:#174441;
-}
+      #space {
+          height: 20px;
+      }
 
-#resume h3{
-  margin:10px 0 10px 10px;
-  font-size: 20px;
-}
+      /* Skills */
+      #skill_icon {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+          gap: 30px;
+          margin-top: 20px;
+      }
 
-#resume li{
-  padding: 5px 16px;
-}
+      #skill_icon_block {
+          text-align: center;
+      }
 
-#space{
-  list-style-type: none;
-}
+      #skill_icon_block img {
+          height: 50px;
+          width: auto;
+          margin-bottom: 10px;
+      }
 
-.skills{
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-}
+      #skill_icon_block p {
+          font-size: 14px;
+      }
 
-#skill_icon{
-  display:flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
+      /* Footer */
+      #footer {
+          background: #FFF9F3;
+          padding: 40px 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 20px;
+      }
 
-#skill_icon_block{
-  width:10%;
-  padding:37px;
-  text-align: center;
-}
+      #footer_menu {
+          display: flex;
+          gap: 30px;
+          list-style-type: none;
+      }
 
-#skill_icon_block img{
-  height: 50px;
-}
+      #footer_menu a {
+          color: #174441;
+          font-size: 18px;
+          transition: color 0.3s ease;
+      }
 
+      #footer_menu a:hover {
+          color: #bc664e;
+      }
 
-/* footer */
-#logo{
-  width:150px;
-  padding:10px 0 10px 30px;
-}
+      .bottom {
+          background-color: #C58A4A;
+          color: #f9eeeb;
+          text-align: center;
+          padding: 20px;
+      }
 
-#footer{
-  display: flex;
-  justify-content:space-start ;
-}
+      .bottom p {
+          margin-bottom: 10px;
+      }
 
-#logo_box{
-  display: flex;
-  justify-content: flex-start;
-}
+      #social a {
+          color: #f9eeeb;
+          font-size: 24px;
+          transition: opacity 0.3s ease;
+      }
 
-#footer_menu_box{
-  display:flex;
-  justify-content:flex-start;
-}
+      #social a:hover {
+          opacity: 0.7;
+      }
 
-#footer_menu{
-  margin: 10px 0 0 150%;
-  list-style-type: none;
-} 
+      /* Responsive Design */
+      @media (max-width: 768px) {
+          .navbar ul {
+              flex-direction: column;
+              align-items: flex-start;
+          }
 
-#footer_menu a{
-  padding: 0 0 5px 0;
-  color:#174441;
-}
+          #items {
+              flex-direction: column;
+              gap: 5px;
+          }
 
-.bottom{
-  background-color:#C58A4A;
-  color:#f9eeeb;
-  text-align: center;
-  padding:0.1px 0 10px 0;
-}
+          section {
+              padding: 40px 15px;
+          }
 
-.bottom p{
-  margin:6px 0;
-}
+          .resume-container {
+              flex-direction: column;
+          }
 
-#social a{
-  color:#f9eeeb;
-}
+          #skill_icon {
+              grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+              gap: 20px;
+          }
 
+          #footer {
+              flex-direction: column;
+              align-items: flex-start;
+          }
 
-@media (max-width: 526px){
-  .navbar ul {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-}
+          #footer_menu {
+              flex-direction: column;
+              gap: 10px;
+          }
+      }
 
-@media (min-width: 305px) and (max-width: 1070px) {
-
-  #resume{
-    display: flex;
-    justify-content:space-between;
-    flex-direction: column;
-  }
-
-  #skill_icon_block{
-    width: 11%;
-    padding: 39px 55px 0 39px;
-  }
-}
-  
+      @media (max-width: 480px) {
+          #skill_icon {
+              grid-template-columns: repeat(3, 1fr);
+          }
+      }
