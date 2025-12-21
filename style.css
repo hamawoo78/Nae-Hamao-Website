@@ -25,6 +25,7 @@
     line-height: 1.1;
     font-weight: 700;
     letter-spacing: -1px;
+    font-family: 'Cormorant Garamond', serif !important;
 }
 
 .hero-subtitle {
@@ -36,6 +37,7 @@
     -webkit-text-stroke: 1.5px #174441;
     -webkit-text-fill-color: transparent;
     letter-spacing: 2px;
+    font-family: 'Cormorant Garamond', serif !important;
 }
 
 .hero-content .description {
@@ -95,6 +97,7 @@
     align-items: center;
     position: relative;
     min-height: 500px;
+    z-index: 9998;
 }
 
 /* Decorative Circles */
@@ -111,39 +114,141 @@
 
 .circle-teal {
     position: absolute;
-    width: 320px;
-    height: 320px;
+    width: 250px;
+    height: 250px;
     background-color: #5a8886;
     border-radius: 50%;
-    bottom: 0;
-    right: -20px;
+    bottom: 80px;
+    right: 180px;
     z-index: 1;
 }
 
 /* Dotted Circle Pattern */
 .dots-circle {
     position: absolute;
-    width: 200px;
-    height: 200px;
-    bottom: 80px;
-    right: 180px;
+    width: 150px;
+    height: 150px;
+    bottom: 70px;
+    right: 70px;
     z-index: 2;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 8px;
     transform: rotate(-15deg);
 }
 
 .dot {
-    width: 12px;
-    height: 12px;
+    position: absolute;
+    width: 10px;
+    height: 10px;
     background-color: #174441;
     border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0 0;
 }
+
+/* Center dot */
+.dot:nth-child(1) { transform: translate(-50%, -50%); }
+
+/* Ring 1 - 6 dots at 15px radius */
+.dot:nth-child(2) { transform: translate(-50%, -50%) rotate(0deg) translateX(15px); }
+.dot:nth-child(3) { transform: translate(-50%, -50%) rotate(60deg) translateX(15px); }
+.dot:nth-child(4) { transform: translate(-50%, -50%) rotate(120deg) translateX(15px); }
+.dot:nth-child(5) { transform: translate(-50%, -50%) rotate(180deg) translateX(15px); }
+.dot:nth-child(6) { transform: translate(-50%, -50%) rotate(240deg) translateX(15px); }
+.dot:nth-child(7) { transform: translate(-50%, -50%) rotate(300deg) translateX(15px); }
+
+/* Ring 2 - 8 dots at 30px radius */
+.dot:nth-child(8) { transform: translate(-50%, -50%) rotate(0deg) translateX(30px); }
+.dot:nth-child(9) { transform: translate(-50%, -50%) rotate(45deg) translateX(30px); }
+.dot:nth-child(10) { transform: translate(-50%, -50%) rotate(90deg) translateX(30px); }
+.dot:nth-child(11) { transform: translate(-50%, -50%) rotate(135deg) translateX(30px); }
+.dot:nth-child(12) { transform: translate(-50%, -50%) rotate(180deg) translateX(30px); }
+.dot:nth-child(13) { transform: translate(-50%, -50%) rotate(225deg) translateX(30px); }
+.dot:nth-child(14) { transform: translate(-50%, -50%) rotate(270deg) translateX(30px); }
+.dot:nth-child(15) { transform: translate(-50%, -50%) rotate(315deg) translateX(30px); }
+
+/* Ring 3 - 12 dots at 45px radius */
+.dot:nth-child(16) { transform: translate(-50%, -50%) rotate(0deg) translateX(45px); }
+.dot:nth-child(17) { transform: translate(-50%, -50%) rotate(30deg) translateX(45px); }
+.dot:nth-child(18) { transform: translate(-50%, -50%) rotate(60deg) translateX(45px); }
+.dot:nth-child(19) { transform: translate(-50%, -50%) rotate(90deg) translateX(45px); }
+.dot:nth-child(20) { transform: translate(-50%, -50%) rotate(120deg) translateX(45px); }
+.dot:nth-child(21) { transform: translate(-50%, -50%) rotate(150deg) translateX(45px); }
+.dot:nth-child(22) { transform: translate(-50%, -50%) rotate(180deg) translateX(45px); }
+.dot:nth-child(23) { transform: translate(-50%, -50%) rotate(210deg) translateX(45px); }
+.dot:nth-child(24) { transform: translate(-50%, -50%) rotate(240deg) translateX(45px); }
+.dot:nth-child(25) { transform: translate(-50%, -50%) rotate(270deg) translateX(45px); }
+.dot:nth-child(26) { transform: translate(-50%, -50%) rotate(300deg) translateX(45px); }
+.dot:nth-child(27) { transform: translate(-50%, -50%) rotate(330deg) translateX(45px); }
+
+/* Ring 4 - 16 dots at 60px radius */
+.dot:nth-child(28) { transform: translate(-50%, -50%) rotate(0deg) translateX(60px); }
+.dot:nth-child(29) { transform: translate(-50%, -50%) rotate(22.5deg) translateX(60px); }
+.dot:nth-child(30) { transform: translate(-50%, -50%) rotate(45deg) translateX(60px); }
+.dot:nth-child(31) { transform: translate(-50%, -50%) rotate(67.5deg) translateX(60px); }
+.dot:nth-child(32) { transform: translate(-50%, -50%) rotate(90deg) translateX(60px); }
+.dot:nth-child(33) { transform: translate(-50%, -50%) rotate(112.5deg) translateX(60px); }
+.dot:nth-child(34) { transform: translate(-50%, -50%) rotate(135deg) translateX(60px); }
+.dot:nth-child(35) { transform: translate(-50%, -50%) rotate(157.5deg) translateX(60px); }
+.dot:nth-child(36) { transform: translate(-50%, -50%) rotate(180deg) translateX(60px); }
+.dot:nth-child(37) { transform: translate(-50%, -50%) rotate(202.5deg) translateX(60px); }
+.dot:nth-child(38) { transform: translate(-50%, -50%) rotate(225deg) translateX(60px); }
+.dot:nth-child(39) { transform: translate(-50%, -50%) rotate(247.5deg) translateX(60px); }
+.dot:nth-child(40) { transform: translate(-50%, -50%) rotate(270deg) translateX(60px); }
+.dot:nth-child(41) { transform: translate(-50%, -50%) rotate(292.5deg) translateX(60px); }
+.dot:nth-child(42) { transform: translate(-50%, -50%) rotate(315deg) translateX(60px); }
+.dot:nth-child(43) { transform: translate(-50%, -50%) rotate(337.5deg) translateX(60px); }
+
+/* Ring 5 - 20 dots at 75px radius */
+.dot:nth-child(44) { transform: translate(-50%, -50%) rotate(0deg) translateX(75px); }
+.dot:nth-child(45) { transform: translate(-50%, -50%) rotate(18deg) translateX(75px); }
+.dot:nth-child(46) { transform: translate(-50%, -50%) rotate(36deg) translateX(75px); }
+.dot:nth-child(47) { transform: translate(-50%, -50%) rotate(54deg) translateX(75px); }
+.dot:nth-child(48) { transform: translate(-50%, -50%) rotate(72deg) translateX(75px); }
+.dot:nth-child(49) { transform: translate(-50%, -50%) rotate(90deg) translateX(75px); }
+.dot:nth-child(50) { transform: translate(-50%, -50%) rotate(108deg) translateX(75px); }
+.dot:nth-child(51) { transform: translate(-50%, -50%) rotate(126deg) translateX(75px); }
+.dot:nth-child(52) { transform: translate(-50%, -50%) rotate(144deg) translateX(75px); }
+.dot:nth-child(53) { transform: translate(-50%, -50%) rotate(162deg) translateX(75px); }
+.dot:nth-child(54) { transform: translate(-50%, -50%) rotate(180deg) translateX(75px); }
+.dot:nth-child(55) { transform: translate(-50%, -50%) rotate(198deg) translateX(75px); }
+.dot:nth-child(56) { transform: translate(-50%, -50%) rotate(216deg) translateX(75px); }
+.dot:nth-child(57) { transform: translate(-50%, -50%) rotate(234deg) translateX(75px); }
+.dot:nth-child(58) { transform: translate(-50%, -50%) rotate(252deg) translateX(75px); }
+.dot:nth-child(59) { transform: translate(-50%, -50%) rotate(270deg) translateX(75px); }
+.dot:nth-child(60) { transform: translate(-50%, -50%) rotate(288deg) translateX(75px); }
+.dot:nth-child(61) { transform: translate(-50%, -50%) rotate(306deg) translateX(75px); }
+.dot:nth-child(62) { transform: translate(-50%, -50%) rotate(324deg) translateX(75px); }
+.dot:nth-child(63) { transform: translate(-50%, -50%) rotate(342deg) translateX(75px); }
+
+/* Ring 6 - 24 dots at 90px radius */
+.dot:nth-child(64) { transform: translate(-50%, -50%) rotate(0deg) translateX(90px); }
+.dot:nth-child(65) { transform: translate(-50%, -50%) rotate(15deg) translateX(90px); }
+.dot:nth-child(66) { transform: translate(-50%, -50%) rotate(30deg) translateX(90px); }
+.dot:nth-child(67) { transform: translate(-50%, -50%) rotate(45deg) translateX(90px); }
+.dot:nth-child(68) { transform: translate(-50%, -50%) rotate(60deg) translateX(90px); }
+.dot:nth-child(69) { transform: translate(-50%, -50%) rotate(75deg) translateX(90px); }
+.dot:nth-child(70) { transform: translate(-50%, -50%) rotate(90deg) translateX(90px); }
+.dot:nth-child(71) { transform: translate(-50%, -50%) rotate(105deg) translateX(90px); }
+.dot:nth-child(72) { transform: translate(-50%, -50%) rotate(120deg) translateX(90px); }
+.dot:nth-child(73) { transform: translate(-50%, -50%) rotate(135deg) translateX(90px); }
+.dot:nth-child(74) { transform: translate(-50%, -50%) rotate(150deg) translateX(90px); }
+.dot:nth-child(75) { transform: translate(-50%, -50%) rotate(165deg) translateX(90px); }
+.dot:nth-child(76) { transform: translate(-50%, -50%) rotate(180deg) translateX(90px); }
+.dot:nth-child(77) { transform: translate(-50%, -50%) rotate(195deg) translateX(90px); }
+.dot:nth-child(78) { transform: translate(-50%, -50%) rotate(210deg) translateX(90px); }
+.dot:nth-child(79) { transform: translate(-50%, -50%) rotate(225deg) translateX(90px); }
+.dot:nth-child(80) { transform: translate(-50%, -50%) rotate(240deg) translateX(90px); }
+.dot:nth-child(81) { transform: translate(-50%, -50%) rotate(255deg) translateX(90px); }
+.dot:nth-child(82) { transform: translate(-50%, -50%) rotate(270deg) translateX(90px); }
+.dot:nth-child(83) { transform: translate(-50%, -50%) rotate(285deg) translateX(90px); }
+.dot:nth-child(84) { transform: translate(-50%, -50%) rotate(300deg) translateX(90px); }
+.dot:nth-child(85) { transform: translate(-50%, -50%) rotate(315deg) translateX(90px); }
+.dot:nth-child(86) { transform: translate(-50%, -50%) rotate(330deg) translateX(90px); }
+.dot:nth-child(87) { transform: translate(-50%, -50%) rotate(345deg) translateX(90px); }
 
 .hero-image {
     position: relative;
-    z-index: 3;
+    z-index: 9999;
     max-width: 350px;
     width: 100%;
 }
@@ -172,12 +277,19 @@
     padding: 20px;
 }
 
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .project-card {
     background: #0A2A2C;
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .project-card:hover {
@@ -369,16 +481,31 @@
     .circle-teal {
         width: 200px;
         height: 200px;
-        right: -10px;
+        right: 80px;
     }
 
     .dots-circle {
         width: 120px;
         height: 120px;
-        grid-template-columns: repeat(6, 1fr);
-        gap: 5px;
-        right: 80px;
+        right: -10px;
     }
+
+    /* Mobile - simplified filled circle with fewer dots */
+    .dot:nth-child(1) { transform: translate(-50%, -50%); }
+    
+    .dot:nth-child(2) { transform: translate(-50%, -50%) rotate(0deg) translateX(20px); }
+    .dot:nth-child(3) { transform: translate(-50%, -50%) rotate(90deg) translateX(20px); }
+    .dot:nth-child(4) { transform: translate(-50%, -50%) rotate(180deg) translateX(20px); }
+    .dot:nth-child(5) { transform: translate(-50%, -50%) rotate(270deg) translateX(20px); }
+    
+    .dot:nth-child(6) { transform: translate(-50%, -50%) rotate(0deg) translateX(40px); }
+    .dot:nth-child(7) { transform: translate(-50%, -50%) rotate(45deg) translateX(40px); }
+    .dot:nth-child(8) { transform: translate(-50%, -50%) rotate(90deg) translateX(40px); }
+    .dot:nth-child(9) { transform: translate(-50%, -50%) rotate(135deg) translateX(40px); }
+    .dot:nth-child(10) { transform: translate(-50%, -50%) rotate(180deg) translateX(40px); }
+    .dot:nth-child(11) { transform: translate(-50%, -50%) rotate(225deg) translateX(40px); }
+    .dot:nth-child(12) { transform: translate(-50%, -50%) rotate(270deg) translateX(40px); }
+    .dot:nth-child(13) { transform: translate(-50%, -50%) rotate(315deg) translateX(40px); }
 
     .dot {
         width: 8px;

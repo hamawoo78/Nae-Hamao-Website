@@ -12,11 +12,19 @@ html {
 
 body {
     background-color: #FFF9F3;
-    font-family: 'Bodoni Moda', serif;
+    /* font-family: 'Inter', serif; */
+    font-family: 'Source Serif 4', serif;;
     line-height: 1.6;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+
+p, li {
+    font-weight: 500;
+
+    
 }
 
 main {
@@ -113,12 +121,14 @@ section h1, section h2 {
     font-size: clamp(32px, 6vw, 45px);
     margin: 0 0 30px 10px;
     color: #174441;
+    font-family: 'Cormorant Garamond', serif !important;
 }
 
 section h3 {
     font-size: clamp(24px, 4vw, 32px);
     margin: 0 0 20px 0;
     color: #174441;
+    font-family: 'Cormorant Garamond', serif !important;
 }
 
 /* Common Button Styles */
@@ -239,43 +249,44 @@ section h3 {
 }
 
 /* Footer */
-#footer {
-    background: #FFF9F3;
+footer {
+    background: #174441;
+    color: #f9eeeb;
     padding: 40px 20px;
+    margin-top: 80px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    border-top: 1px solid #e0e0e0;
-    margin-top: auto;
 }
 
-#footer_menu {
+.footer-nav {
     display: flex;
     gap: 30px;
     list-style-type: none;
 }
 
-#footer_menu a {
-    color: #174441;
+.footer-nav a {
+    color: #f9eeeb;
     font-size: 18px;
     transition: color 0.3s ease;
 }
 
-#footer_menu a:hover {
+.footer-nav a:hover {
     color: #bc664e;
 }
 
 .bottom {
-    background-color: #C58A4A;
+    background-color: #0A2A2C;
     color: #f9eeeb;
     text-align: center;
     padding: 20px;
-}
-
-.bottom p {
-    margin-bottom: 10px;
 }
 
 #social a {
