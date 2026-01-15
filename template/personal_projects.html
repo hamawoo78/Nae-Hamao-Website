@@ -6,8 +6,8 @@
     <title>School Projects - Nae Hamao</title>
     
     <!-- Base CSS -->
-    <link rel="stylesheet" type="text/css" href="base.css">
-    <link rel="stylesheet" type="text/css" href="school_personal.css">
+    <link rel="stylesheet" type="text/css" href="../static/base.css">
+    <link rel="stylesheet" type="text/css" href="../static/school_personal.css">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,7 @@
         <nav class="navbar">
             <ul>
                 <div id="name">
-                    <li><a href="index.html">Nae Hamao</a></li>
+                    <li><a href="../index.html">Nae Hamao</a></li>
                 </div>
                 <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
                     <span></span>
@@ -33,10 +33,10 @@
                     <span></span>
                 </button>
                 <div id="items">
-                    <li><a href="index.html#work">Works</a></li>
+                    <li><a href="../index.html#work">Works</a></li>
                     <li><a href="school_projects.html">School Projects</a></li>
-                    <li><a href="index.html#resume">Resume</a></li>
-                    <li><a href="index.html#footer">Contact</a></li>
+                    <li><a href="../index.html#resume">Resume</a></li>
+                    <li><a href="../index.html#footer">Contact</a></li>
                 </div>
             </ul>
         </nav>
@@ -52,28 +52,7 @@
         <section id="work">
             <h2>Projects</h2>
             <div class="project-grid">
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x200/174441/f9eeeb?text=Weather+App" alt="Weather App">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-title">
-                            <a href="https://www.youtube.com/watch?v=BHOTFd9d58s">Weather App for Cafe (Django)</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/EcommersWeb.PNG" alt="E-commerce Website">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-title">
-                            <a href="https://www.youtube.com/watch?v=cAsBxHKiW9k">E-commerce Website (Flask)</a>
-                        </div>
-                    </div>
-                </div>
+                <!-- Projects will be loaded dynamically from projects.json -->
             </div>
         </section>
     </main>
@@ -87,9 +66,9 @@
         </div>
         <nav>
             <ul class="footer-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#work">Projects</a></li>
-            <li><a href="index.html#resume">Resume</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#work">Projects</a></li>
+            <li><a href="../index.html#resume">Resume</a></li>
             </ul>
         </nav>
         </div>
@@ -122,3 +101,13 @@
                 menuItems.classList.remove('active');
             });
         });
+    </script>
+    <script src="../static/projects.js"></script>
+    <script>
+        // Load personal projects on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            loadProjects('personal');
+        });
+    </script>
+</body>
+</html>

@@ -6,8 +6,8 @@
     <title>School Projects - Nae Hamao</title>
     
     <!-- Base CSS -->
-    <link rel="stylesheet" type="text/css" href="base.css">
-    <link rel="stylesheet" type="text/css" href="school_personal.css">
+    <link rel="stylesheet" type="text/css" href="../static/base.css">
+    <link rel="stylesheet" type="text/css" href="../static/school_personal.css">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -150,7 +150,7 @@
         <nav class="navbar">
             <ul>
                 <div id="name">
-                    <li><a href="index.html">Nae Hamao</a></li>
+                    <li><a href="../index.html">Nae Hamao</a></li>
                 </div>
                 <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
                     <span></span>
@@ -158,10 +158,10 @@
                     <span></span>
                 </button>
                 <div id="items">
-                    <li><a href="index.html#work">Works</a></li>
+                    <li><a href="../index.html#work">Works</a></li>
                     <li><a href="school_projects.html">School Projects</a></li>
-                    <li><a href="index.html#resume">Resume</a></li>
-                    <li><a href="index.html#footer">Contact</a></li>
+                    <li><a href="../index.html#resume">Resume</a></li>
+                    <li><a href="../index.html#footer">Contact</a></li>
                 </div>
             </ul>
         </nav>
@@ -177,50 +177,7 @@
         <section id="work">
             <h2>Projects</h2>
             <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/Zodiac.PNG" alt="Zodiac App">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-title">
-                            <a href="https://github.com/hamawoo78/Zodiac-Sign-Personality-Checker">Zodiac Sign Personality Check App (JSON server)</a>
-                        </div>
-                        <a href="HamaoN-Zodiac Sign Personality Check App.pptx" class="project-link">→ PPT presentation</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/canvas_game.png" alt="Canvas Game">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-title">
-                            <a href="https://hamawoo78.github.io/GetTheStarwithMario_Canvas_Game/">Canvas Game (Javascript)</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/RPS.png" alt="Rock Paper Scissors Game">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-title">
-                            <a href="https://hamawoo78.github.io/RockPaperScissorsGame/">Rock Paper Scissors Game (Javascript)</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x200/174441/f9eeeb?text=Portfolio+Website" alt="Portfolio Website">
-                    </div>
-                    <div class="project-content">
-                        <div class="project-title">
-                            <a href="#">This Web Site!! (HTML/CSS)</a>
-                        </div>
-                    </div>
-                </div> -->
+                <!-- Projects will be loaded dynamically from projects.json -->
             </div>
         </section>
     </main>
@@ -234,9 +191,9 @@
         </div>
         <nav>
             <ul class="footer-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#work">Projects</a></li>
-            <li><a href="index.html#resume">Resume</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#work">Projects</a></li>
+            <li><a href="../index.html#resume">Resume</a></li>
             </ul>
         </nav>
         </div>
@@ -269,3 +226,13 @@
                 menuItems.classList.remove('active');
             });
         });
+    </script>
+    <script src="../static/projects.js"></script>
+    <script>
+        // Load school projects on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            loadProjects('school');
+        });
+    </script>
+</body>
+</html>
