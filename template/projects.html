@@ -1,426 +1,189 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Project Details - Nae Hamao</title>
-      <!-- Base CSS -->
-    <link rel="stylesheet" type="text/css" href="base.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Projects - Nae Hamao</title>
+    
+    <!-- Base CSS -->
+    <link rel="stylesheet" type="text/css" href="../static/base.css">
+    <link rel="stylesheet" type="text/css" href="../static/school_personal.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Page-specific CSS -->
+    <!-- <style>
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, #174441 0%, #0A2A2C 100%);
+            color: #f9eeeb;
+            padding: 80px 20px 60px;
+            text-align: center;
+        }
 
-    html {
-      scroll-behavior: smooth;
-    }
+        .page-header h1 {
+            font-size: clamp(36px, 6vw, 56px);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
 
-    body {
-      background-color: #FFF9F3;
-      font-family: 'Bodoni Moda', serif;
-      line-height: 1.6;
-      color: #0A2A2C;
-    }
+        .page-header p {
+            font-size: clamp(16px, 3vw, 20px);
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
 
-    a {
-      text-decoration: none;
-    }
+        /* Projects Section */
+        #work {
+            padding: 60px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
 
-    /* Header & Navigation */
-    .header {
-      background-color: #FFF9F3;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      border-bottom: 1px solid #e9e6df;
-    }
+        #work h2 {
+            font-size: clamp(32px, 6vw, 45px);
+            color: #174441;
+            margin: 0 0 40px 0;
+            text-align: center;
+        }
 
-    .navbar {
-      padding: 0 20px;
-    }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px 0;
+        }
 
-    .navbar ul {
-      list-style-type: none;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      padding: 10px 0;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+        .project-card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0;
+        }
 
-    .navbar a {
-      display: block;
-      color: #0A2A2C;
-      padding: 14px 16px;
-      transition: color 0.3s ease;
-    }
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 20px rgba(23, 68, 65, 0.15);
+        }
 
-    .navbar a:hover {
-      color: #bc664e;
-    }
+        .project-image {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            background: #f5f5f5;
+        }
 
-    #name {
-      font-size: clamp(24px, 5vw, 30px);
-      font-weight: 700;
-    }
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
 
-    #items {
-      display: flex;
-      gap: 10px;
-      font-size: clamp(16px, 3vw, 20px);
-    }
+        .project-card:hover .project-image img {
+            transform: scale(1.05);
+        }
 
-    .back-link {
-      color: #174441;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
+        .project-content {
+            padding: 25px;
+        }
 
-    .back-link:hover {
-      color: #bc664e;
-    }
+        .project-title {
+            font-size: clamp(18px, 3vw, 22px);
+            margin-bottom: 12px;
+        }
 
-    .right-links {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-    }
+        .project-title a {
+            color: #174441;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
 
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 5px;
-      background: #174441;
-      color: #f9eeeb;
-      font-weight: 600;
-      font-size: 14px;
-      transition: all 0.3s ease;
-      border: 2px solid #174441;
-    }
+        .project-title a:hover {
+            color: #bc664e;
+        }
 
-    .btn:hover {
-      background: #0A2A2C;
-      border-color: #0A2A2C;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(23, 68, 65, 0.3);
-    }
+        .project-link {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #5a8886;
+            padding-left: 5px;
+            transition: color 0.3s ease;
+        }
 
-    .btn.outline {
-      background: transparent;
-      color: #174441;
-      border: 2px solid #174441;
-    }
+        .project-link:hover {
+            color: #bc664e;
+        }
 
-    .btn.outline:hover {
-      background: #174441;
-      color: #f9eeeb;
-    }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .page-header {
+                padding: 60px 20px 40px;
+            }
 
-    /* Container */
-    .container {
-      max-width: 1200px;
-      margin: 40px auto 80px;
-      padding: 0 20px;
-    }
+            .project-grid {
+                grid-template-columns: 1fr;
+                padding: 10px 0;
+            }
+        }
 
-    /* Hero Section */
-    .hero {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 40px;
-      align-items: center;
-      margin-bottom: 50px;
-      padding: 40px 0;
-    }
-
-    .hero-text h1 {
-      font-size: clamp(36px, 6vw, 52px);
-      line-height: 1.1;
-      margin: 0 0 15px;
-      color: #174441;
-      font-weight: 700;
-    }
-
-    .tagline {
-      color: #5f6f6c;
-      margin: 0;
-      font-size: clamp(16px, 3vw, 20px);
-      line-height: 1.6;
-    }
-
-    .hero-media img {
-      width: 100%;
-      border-radius: 10px;
-      border: 1px solid #e9e6df;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      object-fit: cover;
-    }
-
-    /* Card Sections */
-    .card {
-      background: #ffffff;
-      border: 1px solid #e9e6df;
-      border-radius: 10px;
-      padding: 30px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
-      margin-bottom: 30px;
-    }
-
-    .card h2 {
-      margin: 0 0 15px;
-      font-size: clamp(22px, 4vw, 28px);
-      color: #174441;
-      font-weight: 700;
-    }
-
-    .card p {
-      margin: 0;
-      color: #5f6f6c;
-      line-height: 1.7;
-      font-size: 16px;
-    }
-
-    .card ul,
-    .card ol {
-      margin: 0;
-      padding-left: 25px;
-      color: #5f6f6c;
-      line-height: 1.8;
-    }
-
-    .card li {
-      margin-bottom: 8px;
-    }
-
-    /* Grid Layout */
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
-      margin-bottom: 30px;
-    }
-
-    .grid .full-width {
-      grid-column: 1 / -1;
-    }
-
-    /* Project Links Card */
-    .project-links {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-      margin-top: 10px;
-    }
-
-    .project-link-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 24px;
-      border-radius: 5px;
-      background: #174441;
-      color: #f9eeeb;
-      font-weight: 600;
-      font-size: 15px;
-      transition: all 0.3s ease;
-      border: 2px solid #174441;
-    }
-
-    .project-link-btn:hover {
-      background: #0A2A2C;
-      border-color: #0A2A2C;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(23, 68, 65, 0.3);
-    }
-
-    .project-link-btn.outline {
-      background: transparent;
-      color: #174441;
-      border: 2px solid #174441;
-    }
-
-    .project-link-btn.outline:hover {
-      background: #174441;
-      color: #f9eeeb;
-    }
-
-    .project-link-btn i {
-      font-size: 16px;
-    }
-
-    /* Tech Stack Chips */
-    .chips {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-top: 10px;
-    }
-
-    .chip {
-      padding: 10px 16px;
-      border-radius: 5px;
-      border: 1px solid #e9e6df;
-      background: #FFF9F3;
-      font-size: 14px;
-      color: #174441;
-      font-weight: 600;
-    }
-
-    .chip.muted {
-      color: #5f6f6c;
-      font-weight: 500;
-    }
-
-
-    /* Responsive Design */
-    @media (max-width: 860px) {
-      .hero {
-        grid-template-columns: 1fr;
-      }
-
-      .grid {
-        grid-template-columns: 1fr;
-      }
-
-      .grid .full-width {
-        grid-column: 1;
-      }
-
-      .navbar ul {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      #items {
-        flex-direction: column;
-        gap: 5px;
-      }
-
-      .footer-content {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .footer-nav {
-        flex-direction: column;
-        gap: 10px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .container {
-        padding: 0 15px;
-      }
-
-      .card {
-        padding: 20px;
-      }
-
-      .right-links {
-        flex-direction: column;
-        width: 100%;
-      }
-
-      .btn {
-        width: 100%;
-        text-align: center;
-      }
-
-      .project-links {
-        flex-direction: column;
-      }
-
-      .project-link-btn {
-        width: 100%;
-        justify-content: center;
-      }
-    }
-  </style>
+        @media (max-width: 480px) {
+            #work {
+                padding: 40px 15px;
+            }
+        }
+    </style> -->
 </head>
 <body>
-  <header class="header">
-    <nav class="navbar">
-      <ul>
-        <div id="name">
-          <li><a href="index.html" class="back-link">← Nae Hamao</a></li>
+    <!-- Header -->
+    <div class="header">
+        <nav class="navbar">
+            <ul>
+                <div id="name">
+                    <li><a href="../index.html">Nae Hamao</a></li>
+                </div>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div id="items">
+                    <li><a href="../index.html#work">Works</a></li>
+                    <li><a href="school_projects.html">School Projects</a></li>
+                    <li><a href="../index.html#resume">Resume</a></li>
+                    <li><a href="../index.html#footer">Contact</a></li>
+                </div>
+            </ul>
+        </nav>
+
+        <div class="page-header">
+            <h1 id = "page_tittle"></h1>
+            <p id = "page_description"></p>
         </div>
-        <div id="items" class="right-links">
-          <a id="demoLink" class="btn" href="#" target="_blank" rel="noopener" style="display:none;">Live Demo</a>
-          <a id="sourceLink" class="btn outline" href="#" target="_blank" rel="noopener" style="display:none;">View Source</a>
-        </div>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="container">
-    <section class="hero">
-      <div class="hero-text">
-        <h1 id="title">Loading…</h1>
-        <p id="tagline" class="tagline"></p>
-      </div>
-      <div class="hero-media">
-        <img id="screenshot" alt="Project screenshot" />
-      </div>
-    </section>
-
-    <div class="grid">
-      <section class="card full-width">
-        <h2>Overview</h2>
-        <p id="overview"></p>
-      </section>
-
-      <section class="card">
-        <h2>Key Features</h2>
-        <ul id="keyFeatures"></ul>
-      </section>
-
-      <section class="card">
-        <h2>How it works</h2>
-        <ol id="howItWorks"></ol>
-      </section>
-
-      <section class="card">
-        <h2>Quick run</h2>
-        <ol id="quickRun"></ol>
-      </section>
-
-      <section class="card">
-        <h2>Customization tips</h2>
-        <ul id="customizationTips"></ul>
-      </section>
-
-      <section class="card">
-        <h2>Technologies Used</h2>
-        <div id="techStack" class="chips"></div>
-      </section>
-
-      <section class="card project-links-card">
-        <h2>Project Links</h2>
-        <div class="project-links">
-          <a id="demoLinkBottom" class="project-link-btn" href="#" target="_blank" rel="noopener" style="display:none;">
-            <i class="fa">&#xf08e;</i>
-            <span>View Live Demo</span>
-          </a>
-          <a id="sourceLinkBottom" class="project-link-btn outline" href="#" target="_blank" rel="noopener" style="display:none;">
-            <i class="fa">&#xf121;</i>
-            <span>View Source Code</span>
-          </a>
-        </div>
-      </section>
     </div>
-  </main>
 
-  <!-- Footer -->
+    <!-- Main Content -->
+    <main>
+        <section id="work">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <!-- Projects will be loaded dynamically from projects.json -->
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
         <div class="footer-logo">
@@ -428,23 +191,22 @@
         </div>
         <nav>
             <ul class="footer-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#work">Projects</a></li>
-            <li><a href="index.html#resume">Resume</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#work">Projects</a></li>
+            <li><a href="../index.html#resume">Resume</a></li>
             </ul>
         </nav>
         </div>
     </footer>
 
-    <div class="bottom">
+  <div class="bottom">
     <p>Made by Nae Hamao © 2024</p>
     <div id="social">
             <a href="https://www.linkedin.com/in/nae-hamao/" aria-label="LinkedIn">
                 <i class="fa">&#xf0e1;</i>
             </a>
         </div>
-    </div>
-
-  <script src="scripts/project.js"></script>
+  </div>
+    <script src="../static/projects.js"></script>
 </body>
 </html>

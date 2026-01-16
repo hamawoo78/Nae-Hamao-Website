@@ -1,3 +1,31 @@
+// Get the parameter value
+const urlParams = new URLSearchParams(window.location.search);
+const filterType = urlParams.get('type');
+console.log(filterType); 
+
+// Toggle mobile menu
+function toggleMobileMenu() {
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const menuItems = document.getElementById('items');
+    menuToggle.classList.toggle('active');
+    menuItems.classList.toggle('active');
+}
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('#items a').forEach(link => {
+    link.addEventListener('click', () => {
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const menuItems = document.getElementById('items');
+        menuToggle.classList.remove('active');
+        menuItems.classList.remove('active');
+    });
+});
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', () => {
+    loadProjects(filterType);
+});
+
 // Fetch and render projects from JSON
 async function loadProjects(filterType = null) {
     try {
@@ -6,12 +34,18 @@ async function loadProjects(filterType = null) {
         
         // Filter projects by type if specified
         let projects = data.projects;
+        let type = data.page_type;
+        // console.log(type); 
+
         if (filterType) {
             projects = projects.filter(project => project.type === filterType);
+            page_type = type.filter(type => type.type === filterType);
+            // console.log(page_type);
         }
         
         // Render projects to the grid
         renderProjects(projects);
+        displayProjectTitle(page_type[0])
     } catch (error) {
         console.error('Error loading projects:', error);
     }
@@ -82,4 +116,10 @@ function createProjectCard(project) {
     link.appendChild(card);
     
     return link;
+}
+
+function displayProjectTitle(project) {
+    console.log(project.title);
+    document.getElementById('page_tittle').textContent = project.title;
+    document.getElementById('page_description').textContent = project.description;
 }

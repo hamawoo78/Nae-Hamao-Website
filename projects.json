@@ -8,17 +8,19 @@
       "image": "../images/Zodiac.PNG",
       "link": "https://github.com/hamawoo78/Zodiac-Sign-Personality-Checker",
       "additionalLink": "../static/Nae Hamao Software Developer Resume.pdf",
-      "additionalLinkText": "→ PPT presentation"
+      "additionalLinkText": "→ PPT presentation",
+      "date": null
     },
     {
       "id": 2,
-      "type": "school",
+      "type": "personal",
       "title": "Weather App for Cafe",
       "description": "A Django-based weather application for cafes",
       "image": "https://via.placeholder.com/400x200/174441/f9eeeb?text=Weather+App",
       "link": "https://www.youtube.com/watch?v=BHOTFd9d58s",
       "additionalLink": null,
-      "additionalLinkText": null
+      "additionalLinkText": null,
+      "date": null
     },
     {
       "id": 3,
@@ -28,7 +30,8 @@
       "image": "../images/canvas_game.png",
       "link": "https://hamawoo78.github.io/GetTheStarwithMario_Canvas_Game/",
       "additionalLink": null,
-      "additionalLinkText": null
+      "additionalLinkText": null,
+      "date": null
     },
     {
       "id": 4,
@@ -38,11 +41,12 @@
       "image": "../images/RPS.png",
       "link": "https://hamawoo78.github.io/RockPaperScissorsGame/",
       "additionalLink": null,
-      "additionalLinkText": null
+      "additionalLinkText": null,
+      "date": null
     },
     {
       "id": 5,
-      "type": "school",
+      "type": "personal",
       "title": "E-commerce Website",
       "description": "A full-stack e-commerce platform built with Flask",
       "image": "../images/EcommersWeb.PNG",
@@ -52,43 +56,31 @@
     },
     {
       "id": 6,
-      "type": "school",
-      "title": "This Web Site!!",
-      "description": "This portfolio website built with HTML/CSS",
-      "image": "https://via.placeholder.com/400x200/174441/f9eeeb?text=Portfolio+Website",
-      "link": "#",
-      "additionalLink": null,
-      "additionalLinkText": null
-    },
-    {
-      "id": 7,
       "type": "personal",
-      "title": "Personal Project 1",
-      "description": "Description of your first personal project",
-      "image": "https://via.placeholder.com/400x200/174441/f9eeeb?text=Project+1",
-      "link": "#",
-      "additionalLink": null,
-      "additionalLinkText": null
-    },
-    {
-      "id": 8,
-      "type": "personal",
-      "title": "Personal Project 2",
-      "description": "Description of your second personal project",
-      "image": "https://via.placeholder.com/400x200/5a8886/f9eeeb?text=Project+2",
-      "link": "#",
-      "additionalLink": null,
-      "additionalLinkText": null
-    },
-    {
-      "id": 9,
-      "type": "personal",
-      "title": "Personal Project 3",
-      "description": "Description of your third personal project",
-      "image": "https://via.placeholder.com/400x200/FCD8CF/174441?text=Project+3",
-      "link": "#",
+      "title": "Interview Tracker",
+      "description": "Web application that uses AI to extract and organize unstructured interview emails into structured data, helping me track, analyze, and improve my job application process.",
+      "image": "#",
+      "link": "https://github.com/hamawoo78/interview-tracker",
       "additionalLink": null,
       "additionalLinkText": null
     }
-  ]
+  ],
+
+    "page_type": [
+    {
+      "type": "school",
+      "title": "School Projects",
+      "description": "A collection of projects I developed during my time at Bellevue College, showcasing my growth in software development"
+    },
+    {
+      "type": "personal",
+      "title": "Personal Projects",
+      "description": "A collection of projects I developed during my free time, showcasing my growth in software development"
+    }
+    ]
+
 }
+
+
+
+
