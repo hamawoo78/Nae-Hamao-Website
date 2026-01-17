@@ -110,15 +110,7 @@ function createProjectCard(project) {
     contentDiv.appendChild(dateP);
     // contentDiv.appendChild(descP);
     
-    // Add additional link if it exists
-    if (project.additionalLink) {
-        const additionalLink = document.createElement('a');
-        additionalLink.href = project.additionalLink;
-        additionalLink.className = 'project-link';
-        additionalLink.textContent = project.additionalLinkText || '→ View';
-        additionalLink.onclick = (e) => e.stopPropagation(); // Prevent card link from triggering
-        contentDiv.appendChild(additionalLink);
-    }
+
     
     card.appendChild(imageDiv);
     card.appendChild(contentDiv);

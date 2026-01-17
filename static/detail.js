@@ -62,5 +62,13 @@ function displayProjectCard(project) {
     document.getElementById('techStack').textContent = project.techStack;
     document.getElementById('sourceLinkBottom').href = project.link;
     
-    
+        // Add additional link if it exists
+    if (project.additionalLink) {
+        const additionalLink = document.createElement('a');
+        additionalLink.href = project.additionalLink;
+        additionalLink.className = 'project-link';
+        additionalLink.textContent = project.additionalLinkText || '→ View';
+        additionalLink.onclick = (e) => e.stopPropagation(); // Prevent card link from triggering
+        contentDiv.appendChild(additionalLink);
+    }
 }
