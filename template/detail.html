@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Project Details - Nae Hamao</title>
       <!-- Base CSS -->
-    <link rel="stylesheet" type="text/css" href="base.css">
+    <link rel="stylesheet" type="text/css" href="../static/base.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,900&display=swap" rel="stylesheet">
@@ -160,6 +160,7 @@
 
     .hero-media img {
       width: 100%;
+      height: 300px;
       border-radius: 10px;
       border: 1px solid #e9e6df;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -352,7 +353,7 @@
     <nav class="navbar">
       <ul>
         <div id="name">
-          <li><a href="index.html" class="back-link">← Nae Hamao</a></li>
+          <li><a href="../index.html" class="back-link">← Nae Hamao</a></li>
         </div>
         <div id="items" class="right-links">
           <a id="demoLink" class="btn" href="#" target="_blank" rel="noopener" style="display:none;">Live Demo</a>
@@ -365,7 +366,7 @@
   <main class="container">
     <section class="hero">
       <div class="hero-text">
-        <h1 id="title">Loading…</h1>
+        <h1 id="title"></h1>
         <p id="tagline" class="tagline"></p>
       </div>
       <div class="hero-media">
@@ -390,16 +391,6 @@
       </section>
 
       <section class="card">
-        <h2>Quick run</h2>
-        <ol id="quickRun"></ol>
-      </section>
-
-      <section class="card">
-        <h2>Customization tips</h2>
-        <ul id="customizationTips"></ul>
-      </section>
-
-      <section class="card">
         <h2>Technologies Used</h2>
         <div id="techStack" class="chips"></div>
       </section>
@@ -407,10 +398,6 @@
       <section class="card project-links-card">
         <h2>Project Links</h2>
         <div class="project-links">
-          <a id="demoLinkBottom" class="project-link-btn" href="#" target="_blank" rel="noopener" style="display:none;">
-            <i class="fa">&#xf08e;</i>
-            <span>View Live Demo</span>
-          </a>
           <a id="sourceLinkBottom" class="project-link-btn outline" href="#" target="_blank" rel="noopener" style="display:none;">
             <i class="fa">&#xf121;</i>
             <span>View Source Code</span>
@@ -421,30 +408,30 @@
   </main>
 
   <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-        <div class="footer-logo">
-            <h3>Nae Hamao</h3>
-        </div>
-        <nav>
-            <ul class="footer-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#work">Projects</a></li>
-            <li><a href="index.html#resume">Resume</a></li>
-            </ul>
-        </nav>
-        </div>
-    </footer>
+  <footer>
+      <div class="footer-content">
+      <div class="footer-logo">
+          <h3>Nae Hamao</h3>
+      </div>
+      <nav>
+          <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#work">Projects</a></li>
+          <li><a href="index.html#resume">Resume</a></li>
+          </ul>
+      </nav>
+      </div>
+  </footer>
 
-    <div class="bottom">
-    <p>Made by Nae Hamao © 2024</p>
+  <div class="bottom">
+    <p>Made by Nae Hamao © 2026</p>
     <div id="social">
             <a href="https://www.linkedin.com/in/nae-hamao/" aria-label="LinkedIn">
                 <i class="fa">&#xf0e1;</i>
             </a>
         </div>
-    </div>
+  </div>
 
-  <script src="scripts/project.js"></script>
+  <script src="../static/detail.js"></script>
 </body>
 </html>

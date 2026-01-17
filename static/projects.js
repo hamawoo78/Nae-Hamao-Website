@@ -71,7 +71,7 @@ function renderProjects(projects) {
 
 function createProjectCard(project) {
     const link = document.createElement('a');
-    link.href = project.link;
+    link.href = 'detail.html?id=' + project.id;
     link.className = 'project-card-link';
     
     const card = document.createElement('div');
@@ -87,19 +87,28 @@ function createProjectCard(project) {
     
     const contentDiv = document.createElement('div');
     contentDiv.className = 'project-content';
+    contentDiv.style.backgroundColor = '#174441';
     
     const titleDiv = document.createElement('div');
     titleDiv.className = 'project-title';
     titleDiv.textContent = project.title;
+    titleDiv.style.color = '#f5b8a8';
+
+    const dateP = document.createElement('p');
+    dateP.style.color = '#f9eeeb';
+    dateP.style.marginTop = '10px';
+    dateP.style.fontSize = '15px';
+    dateP.textContent = 'Created ' + project.date;
     
-    const descP = document.createElement('p');
-    descP.style.color = '#f9eeeb';
-    descP.style.marginTop = '10px';
-    descP.style.fontSize = '15px';
-    descP.textContent = project.description;
+    // const descP = document.createElement('p');
+    // descP.style.color = '#f9eeeb';
+    // descP.style.marginTop = '10px';
+    // descP.style.fontSize = '15px';
+    // descP.textContent = project.description;
     
     contentDiv.appendChild(titleDiv);
-    contentDiv.appendChild(descP);
+    contentDiv.appendChild(dateP);
+    // contentDiv.appendChild(descP);
     
     // Add additional link if it exists
     if (project.additionalLink) {
