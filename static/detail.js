@@ -60,15 +60,17 @@ function displayProjectCard(project) {
     document.getElementById('keyFeatures').textContent = project.keyFeatures;
     document.getElementById('howItWorks').textContent = project.howItWorks;
     document.getElementById('techStack').textContent = project.techStack;
-    document.getElementById('sourceLinkBottom').href = project.link;
+    if (project.link){
+        document.getElementById('sourceLinkBottom').href = project.link;
+        document.getElementById('sourceLinkBottom').style.display = 'inline-block';
+    }
+
     
-        // Add additional link if it exists
+    // Set additional link if it exists
     if (project.additionalLink) {
-        const additionalLink = document.createElement('a');
+        const additionalLink = document.getElementById('additionalLinkBottom');
         additionalLink.href = project.additionalLink;
-        additionalLink.className = 'project-link';
-        additionalLink.textContent = project.additionalLinkText || '→ View';
-        additionalLink.onclick = (e) => e.stopPropagation(); // Prevent card link from triggering
-        contentDiv.appendChild(additionalLink);
+        additionalLink.textContent = project.additionalLinkText || 'Additional Link';
+        additionalLink.style.display = 'inline-block';
     }
 }
