@@ -4,16 +4,17 @@
       "id": 1,
       "type": "school",
       "title": "Zodiac Sign Personality Check App",
-      "description": "A JSON server-based application for checking zodiac sign personalities",
       "image": "../images/Zodiac.PNG",
       "link": "https://github.com/hamawoo78/Zodiac-Sign-Personality-Checker",
       "additionalLink": "../static/Nae Hamao Software Developer Resume.pdf",
       "additionalLinkText": "→ PPT presentation",
       "date": "2024-06",
-      "overview": "test",
-      "keyFeatures": "test",
-      "howItWorks": "test",
-      "techStack": "test"
+      "description": "A mobile-friendly app to explore zodiac sign personalities using React, TypeScript, and a JSON server backend.",
+      "overview": "This mobile-optimized application allows users to select any zodiac sign and instantly view personality traits, strengths, and weaknesses. Built with React, TypeScript, and Vite, it demonstrates dynamic data fetching from a JSON server and responsive design suitable for mobile devices.",
+      "keyFeatures": "- Browse zodiac signs to discover personality insights\n- Intuitive, mobile-friendly interface\n- Dynamic data fetching from JSON server\n- Fast, lightweight, and responsive design",
+      "howItWorks": "Users select a zodiac sign within the app, triggering a fetch request to the JSON server. The app then renders the relevant personality information instantly, illustrating real-time data handling and mobile-responsive UI updates.",
+      "techStack": "React, TypeScript, Vite, JSON Server, CSS"
+
     },
     {
       "id": 2,
@@ -25,10 +26,11 @@
       "additionalLink": null,
       "additionalLinkText": null,
       "date": "2023-11",
-      "overview": null,
-      "keyFeatures": null,
-      "howItWorks": null,
-      "techStack": null
+      "overview": "This project was developed during a 5-day internship-style workshop with a mock client who wanted to analyze the relationship between weather conditions and café sales. The goal was to design a practical weather application that could support business decision-making for café operations.",
+      "keyFeatures": "Fetches real-time weather data using an IBM Japan Weather API\n- Displays both actual temperature and \"feels like\" temperature to reflect customer perception\n- Supports multiple café locations with the ability to add new cities dynamically\n- Designed to scale as the client expands to new business locations",
+      "howItWorks": "The application retrieves weather data through an external API and exposes it via a Django-based backend API. Initially configured for three cities, the system allows users to add new locations by city name. The app then uses a secondary free geolocation API to obtain latitude and longitude, which are used to fetch accurate weather data for the newly added location.",
+      "techStack": "Python, Django, REST API, HTML, CSS, JavaScript"
+
     },
     {
       "id": 3,
@@ -40,10 +42,11 @@
       "additionalLink": null,
       "additionalLinkText": null,
       "date": "2023-05",
-      "overview": null,
-      "keyFeatures": null,
-      "howItWorks": null,
-      "techStack": null
+      "overview": "This project was created as part of a school assignment focused on building interactive games using JavaScript and HTML5 Canvas. The objective was to understand core game mechanics such as movement, collision detection, and real-time rendering.",
+      "keyFeatures": "- Player-controlled Mario character using arrow keys\n- Direction-based character animation that changes Mario’s facing\n- Star-chasing gameplay with score-oriented mechanics\n- Smooth rendering using HTML5 Canvas",
+      "howItWorks": "The game runs on an HTML5 Canvas where JavaScript continuously updates the game state and redraws the scene. Player input is captured through keyboard arrow keys, updating Mario’s position and direction. Based on movement direction, the character’s facing changes dynamically while the game loop handles rendering and star collection.",
+      "techStack": "JavaScript, HTML5 Canvas, CSS"
+
     },
     {
       "id": 4,
@@ -55,10 +58,11 @@
       "additionalLink": null,
       "additionalLinkText": null,
       "date": "2022-09",
-      "overview": null,
-      "keyFeatures": null,
-      "howItWorks": null,
-      "techStack": null
+      "overview": "This was my first programming project at Bellevue College, created to practice core JavaScript logic and user interaction. Beyond implementing the basic Rock Paper Scissors game, I focused on improving user experience by tracking results and allowing continuous gameplay without page refreshes.",
+      "keyFeatures": "- Classic Rock Paper Scissors gameplay\n- Win, loss, and draw count tracking\n- Option to continue playing without refreshing the page\n- Simple and clear user interaction flow",
+      "howItWorks": "The game uses JavaScript to handle user input, generate computer choices, and determine the outcome of each round. Game state, including win counts, is stored in variables and updated dynamically, allowing users to continue playing multiple rounds without reloading the page.",
+      "techStack": "JavaScript, HTML, CSS"
+
     },
     {
       "id": 5,
@@ -70,10 +74,11 @@
       "additionalLink": null,
       "additionalLinkText": null,
       "date":"2023-01",
-      "overview": null,
-      "keyFeatures": null,
-      "howItWorks": null,
-      "techStack": null
+      "overview": "This project was developed as a graduation project for CS50, Harvard University’s introduction to computer science course. I chose to build an e-commerce website because it represents a real-world, practical system that integrates both frontend and backend logic.",
+      "keyFeatures": "- Product listing and detail pages\n- User interactions such as adding, updating, and removing products\n- Full CRUD functionality for managing data\n- Server-side rendering and routing using Flask",
+      "howItWorks": "The application is built with Flask, handling routing, business logic, and database interactions. Users can browse products and perform actions that trigger Create, Read, Update, and Delete operations. The backend processes requests and updates data accordingly, simulating real-world e-commerce workflows.",
+      "techStack": "Python, Flask, HTML, CSS, JavaScript, SQL"
+
     },
     {
       "id": 6,
@@ -85,10 +90,11 @@
       "additionalLink": null,
       "additionalLinkText": null,
       "date":"2026-01",
-      "overview": null,
-      "keyFeatures": null,
-      "howItWorks": null,
-      "techStack": null
+      "overview": "This project was created to solve a personal workflow problem during my job search. Managing interview preparation notes in documents and scheduling details in separate tools became inefficient, so I designed a single application to centralize interview tracking, preparation, and feedback.",
+      "keyFeatures": "- Centralized tracking of interview schedules, company information, and preparation notes\n- AI-powered extraction of structured data from unstructured interview emails\n- Automatic form autofill by pasting interview or company email content\n- AI-based interview note evaluation and improvement suggestions using OpenAI API",
+      "howItWorks": "Users paste interview-related email content or company information into the app. The system uses the OpenAI API to extract relevant details such as company name, interview date, position, and notes, and automatically populates structured fields. Additional AI features analyze interview preparation notes and provide feedback to help improve interview performance.",
+      "techStack": "Python, Django, OpenAI API, JavaScript, HTML, CSS, SQL"
+
     }
   ],
 
