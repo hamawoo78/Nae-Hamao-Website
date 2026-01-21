@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Fetch and render projects from JSON
 async function loadProjects(id = null) {
     try {
-        const response = await fetch('/projects.json');
+        const response = await fetch('./projects.json');
         const data = await response.json();
         
         // Filter projects by type if specified
