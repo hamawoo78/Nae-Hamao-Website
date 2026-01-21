@@ -270,11 +270,18 @@
     padding: 0;
 }
 
-.project-grid {
+/* .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     padding: 20px;
+} */
+
+.project-grid {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    flex-direction: column;
 }
 
 .project-card-link {

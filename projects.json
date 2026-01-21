@@ -85,7 +85,7 @@
       "type": "personal",
       "title": "Interview Tracker",
       "description": "Web application that uses AI to extract and organize unstructured interview emails into structured data, helping me track, analyze, and improve my job application process.",
-      "image": "#",
+      "image": "../images/interviewTracker.png",
       "link": "https://github.com/hamawoo78/interview-tracker",
       "additionalLink": null,
       "additionalLinkText": null,

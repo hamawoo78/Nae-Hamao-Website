@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <style>
@@ -22,12 +23,27 @@
       scroll-behavior: smooth;
     }
 
-    body {
+    /* body {
       background-color: #FFF9F3;
       font-family: 'Bodoni Moda', serif;
       line-height: 1.6;
       color: #0A2A2C;
-    }
+    } */
+/* 
+  body {
+    background-color: #FFF9F3;
+    font-family: "Cormorant Upright", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #0A2A2C;
+  } */
+  body{
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+   }
 
     a {
       text-decoration: none;
@@ -394,21 +410,21 @@
         <h2>Technologies Used</h2>
         <div id="techStack" class="chips"></div>
       </section>
-
-      <section class="card project-links-card">
-        <h2>Project Links</h2>
-        <div class="project-links">
-          <a id="sourceLinkBottom" class="project-link-btn outline" href="#" target="_blank" rel="noopener" style="display:none;">
-            <i class="fa">&#xf121;</i>
-            <span>View Source Code</span>
-          </a>
-          <a id="additionalLinkBottom" class="project-link-btn" href="#" target="_blank" rel="noopener" style="display:none;">
-            <i class="fa">&#xf08e;</i>
-            <span>Additional Link</span>
-          </a>
-        </div>
-      </section>
     </div>
+
+    <section class="card project-links-card full-width">
+      <h2>Project Links</h2>
+      <div class="project-links">
+        <a id="sourceLinkBottom" class="project-link-btn outline" href="#" target="_blank" rel="noopener" style="display:none;">
+          <i class="fa">&#xf121;</i>
+          <span>View Source Code</span>
+        </a>
+        <a id="additionalLinkBottom" class="project-link-btn" href="#" target="_blank" rel="noopener" style="display:none;">
+          <i class="fa">&#xf08e;</i>
+          <span>Additional Link</span>
+        </a>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->

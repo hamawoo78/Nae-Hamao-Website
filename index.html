@@ -89,12 +89,12 @@
     <!-- Main Content -->
     <main>
         <section id="work">
-            <h2>Projects</h2>
+            <h2 style="color: #f9eeeb;">Core Projects</h2>
             <div class="project-grid">
-                <a href="template/projects.html?type=school" class="project-card-link">
+                <!-- <a href="template/detail.html?id=6" class="project-card-link">
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="./images/school project.png" alt="School Projects">
+                            <img src="./images/#" alt="Projects">
                         </div>
                         <div class="project-content">
                             <div class="project-title">
@@ -105,24 +105,26 @@
                             </p>
                         </div>
                     </div>
-                </a>
+                </a> -->
 
-                <a href="template/projects.html?type=personal" class="project-card-link">
-                    <div class="project-card">
+                <!-- <a href="template/projects.html" class="project-card-link"> Project all→ -->
+                    <!-- <div class="project-card">
                         <div class="project-image">
                             <img src="./images/personalproject.png" alt="Personal Projects">
                         </div>
                         <div class="project-content">
                             <div class="project-title">
-                                Personal Projects
+                                Projects All
                             </div>
                             <p style="color: #f9eeeb; margin-top: 10px; font-size: 15px;">
-                                Personal projects and experimental work outside of school
+                                A collection of personal projects, experimental work outside of school, and selected academic projects.
                             </p>
                         </div>
-                    </div>
-                </a>
+                    </div> -->
+                <!-- </a> -->
             </div>
+            <a href="template/projects.html" class="project-card-link"> Project all→
+
         </section>
 
         <section id="resume">
@@ -267,25 +269,6 @@
         </div>
     </div> -->
 
-    <script>
-        function toggleMobileMenu() {
-            const menuToggle = document.querySelector('.mobile-menu-toggle');
-            const menuItems = document.getElementById('items');
-            
-            menuToggle.classList.toggle('active');
-            menuItems.classList.toggle('active');
-        }
-
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('#items a').forEach(link => {
-            link.addEventListener('click', () => {
-                const menuToggle = document.querySelector('.mobile-menu-toggle');
-                const menuItems = document.getElementById('items');
-                
-                menuToggle.classList.remove('active');
-                menuItems.classList.remove('active');
-            });
-        });
-    </script>
+    <script src="../static/main.js"></script>
 </body>
 </html>
