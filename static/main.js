@@ -77,7 +77,7 @@ function createProjectCard(project) {
     imageDiv.className = 'project-image';
     
     const img = document.createElement('img');
-    img.src = project.image;
+    img.src = project.image.replace('../','');
     img.alt = project.title;
     imageDiv.appendChild(img);
     
